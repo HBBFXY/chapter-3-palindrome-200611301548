@@ -1,8 +1,2 @@
-num = input("请输入一个5位数字：")
-if len(num) != 5 or not num.isdigit():
-    print("错误提示")
-else:
-    if num == num[::-1]:
-        print("是回文数")
-    else:
-        print("不是回文数")
+n = input()
+print("错误提示" if len(n)!=5 or not n.isdigit() else "是回文数" if n==n[::-1] else "不是回文数")
